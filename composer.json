@@ -1,0 +1,11 @@
+{
+  "name": "kewljuice/civicrm_views",
+  "description": "Everything functional related to CiviCRM integration for Drupal views.",
+  "type": "drupal-module",
+  "license": "AGPL-3.0",
+  "keywords": [
+    "CiviCRM",
+    "Drupal 8",
+    "Views"
+  ]
+}
