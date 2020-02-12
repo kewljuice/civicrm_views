@@ -2,12 +2,12 @@
 
 namespace Drupal\civicrm_views\Plugin\views\relationship;
 
-use Drupal\views\Plugin\views\relationship\RelationshipPluginBase;
-use Symfony\Component\DependencyInjection\ContainerInterface;
-use Drupal\views\ViewExecutable;
-use Drupal\views\Plugin\views\display\DisplayPluginBase;
 use Drupal\civicrm\Civicrm;
 use Drupal\core\form\FormStateInterface;
+use Drupal\views\Plugin\views\display\DisplayPluginBase;
+use Drupal\views\Plugin\views\relationship\RelationshipPluginBase;
+use Drupal\views\ViewExecutable;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Provides a relationship to the CiviCRM domain.
@@ -50,8 +50,8 @@ class CivicrmUFMatch extends RelationshipPluginBase {
 
     $this->civicrmCurrentDomain = \CRM_Core_Config::domainID();
 
-    $this->civicrmDomains['current'] = t('Current domain');
-    $this->civicrmDomains[0] = t('All domains');
+    $this->civicrmDomains['current'] = t("Current domain");
+    $this->civicrmDomains[0] = t("All domains");
     $result = civicrm_api('domain', 'get', ['version' => 3]);
     if (empty($result['is_error'])) {
       foreach ($result['values'] as $value) {
@@ -104,8 +104,8 @@ class CivicrmUFMatch extends RelationshipPluginBase {
   public function buildOptionsForm(&$form, FormStateInterface $form_state) {
     $form['civicrm_domain'] = [
       '#type' => 'select',
-      '#title' => 'Which domain of Drupal users do you want to join to?',
-      '#description' => "CiviCRM can be run across multiple domains. Normally, leave this to 'current domain'.",
+      '#title' => t("Which domain of Drupal users do you want to join to?"),
+      '#description' => t("CiviCRM can be run across multiple domains. Normally, leave this to 'current domain'."),
       '#options' => $this->civicrmDomains,
       '#default_value' => isset($this->options['civicrm_domain']) ? $this->options['civicrm_domain'] : 'current',
       '#required' => TRUE,

@@ -2,12 +2,12 @@
 
 namespace Drupal\civicrm_views\Plugin\views\relationship;
 
-use Drupal\views\Plugin\views\relationship\RelationshipPluginBase;
-use Symfony\Component\DependencyInjection\ContainerInterface;
-use Drupal\views\ViewExecutable;
-use Drupal\views\Plugin\views\display\DisplayPluginBase;
 use Drupal\civicrm\Civicrm;
 use Drupal\core\form\FormStateInterface;
+use Drupal\views\Plugin\views\display\DisplayPluginBase;
+use Drupal\views\Plugin\views\relationship\RelationshipPluginBase;
+use Drupal\views\ViewExecutable;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Provides a relationship to the CiviCRM relationship type.

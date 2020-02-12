@@ -2,9 +2,9 @@
 
 namespace Drupal\civicrm_views\Plugin\views\filter;
 
+use Drupal\civicrm\Civicrm;
 use Drupal\views\Plugin\views\filter\InOperator;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use Drupal\civicrm\Civicrm;
 
 /**
  * Wraps the In operator, to select the correct database first.

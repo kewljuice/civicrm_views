@@ -3,8 +3,8 @@
 namespace Drupal\civicrm_views\Plugin\views\field;
 
 use Drupal\core\form\FormStateInterface;
-use Drupal\views\ResultRow;
 use Drupal\views\Plugin\views\field\FieldPluginBase;
+use Drupal\views\ResultRow;
 
 /**
  * Pass markup trough from CiviCRM to Drupal.

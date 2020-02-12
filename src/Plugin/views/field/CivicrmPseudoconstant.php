@@ -3,10 +3,10 @@
 namespace Drupal\civicrm_views\Plugin\views\field;
 
 use Drupal\civicrm\Civicrm;
-use Drupal\views\ResultRow;
-use Drupal\views\Plugin\views\field\FieldPluginBase;
-use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\core\form\FormStateInterface;
+use Drupal\views\Plugin\views\field\FieldPluginBase;
+use Drupal\views\ResultRow;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Displays a CiviCRM pseudo constant.
