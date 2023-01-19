@@ -2,7 +2,7 @@ name: 'CiviCRM Views'
 description: 'Provides Views integration for CiviCRM entities, like Contacts, Groups, Memberships, etc.'
 package: CiviCRM
 type: module
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^8 || ^9 || ^10
 
 dependencies:
   - drupal:civicrm

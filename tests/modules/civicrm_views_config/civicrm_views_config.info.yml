@@ -2,7 +2,7 @@ name: 'CiviCRM Views Test Config'
 description: 'Provides default Views for tests.'
 package: CiviCRM
 type: module
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^8 || ^9 || ^10
 
 dependencies:
   - drupal:civicrm

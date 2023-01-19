@@ -28,7 +28,7 @@ function civicrm_views_views_data() {
   // separate civicrm database.
   // We need to include civicrm.install so that we can use
   // _civicrm_get_db_config().
-  module_load_install('civicrm');
+  \Drupal::moduleHandler()->loadInclude('civicrm', 'install');
   $database = _civicrm_get_db_config()['key'];
 
   // Use CiviCRM schema data to automatically populate $data array with fields
